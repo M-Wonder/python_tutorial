@@ -1,10 +1,14 @@
 name="Wonder"
 print(name)
 print(name.upper())
+
+
 name2="rodger"; print(name2) #this is an inline comment
 #this is a commented line
 print(type(name2))
+print("ger" in name)
 print(isinstance(name, str))
+print(len(name2))
 
 #float
 fraction=2.1
@@ -62,3 +66,16 @@ def is_adult(Age):
     return True if Age >18 else False
 
 print(is_adult(Age))
+
+#booleans in python Python provides the bool type, which can have two values: True and False (capitalized).
+ # numbers are always True except for the number 0
+    #strings are False only when empty
+    #lists, tuples, sets, and dictionaries are False only when empty
+done = True
+print(type(done) == bool )
+print(isinstance(done, bool))
+
+
+#numbers in python Numbers in Python can be of 3 types: int, float and complex.
+
+
