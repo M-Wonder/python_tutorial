@@ -1,5 +1,6 @@
 name="Wonder"
 print(name)
+print(name.upper())
 name2="rodger"; print(name2) #this is an inline comment
 #this is a commented line
 print(type(name2))
@@ -35,3 +36,29 @@ print(False or 'hey') ## 'hey'
 print('hi' or 'hey') ## 'hi'
 print([] or False) ## 'False'
 print(False or []) ## '[]'
+
+
+#biwise operators Bitwise operators in Python
+
+#Some operators are used to work on bits and binary numbers:
+   # & performs binary AND
+   # | performs binary OR
+  #  ^ performs a binary XOR operation
+   # ~ performs a binary NOT operation
+   # << shift left operation
+   # >> shift right operation
+
+#is is called the identity operator. It is used to compare two objects and returns true if both are the same object. More on objects later.
+#in is called the membership operator. Is used to tell if a value is contained in a list, or another sequence. More on lists and other sequences later.
+
+#The Ternary Operator in Python
+def is_adult(Age):
+    if Age > 18:
+        return True
+    else:
+        return False
+    
+def is_adult(Age):
+    return True if Age >18 else False
+
+print(is_adult(Age))
