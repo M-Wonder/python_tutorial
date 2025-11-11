@@ -189,6 +189,41 @@ print(slcice2[:5]); print(slcice2[2:]) #By leaving out the end index, the range 
 slcice2 = "Hello, World!"
 print(slcice2[-5:-2])
 
+#The replace() method replaces a string with another string
+replace1= "Hello, World!"
+print(replace1.replace("H", "J"))
+#The split() method returns a list where the text between the specified separator becomes the list items.
+split1 = "Hello, World!"
+print(split1.split(",")) # returns ['Hello', ' World!'] 
+
+#String Concatenation To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+#To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.
+age5 = 36
+txt = f"My name is John, I am {age5}"
+print(txt)
+
+#A placeholder can contain variables, operations, functions
+price = 75
+txt5 = f"The price is {price} dollars"
+print(txt5)
+#and modifiers to format the value.
+#A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals:
+price = 75
+txt5 = f"The price is {price:.3f} dollars"
+print(txt5)
+
+#A placeholder can contain Python code, like math operations:
+txt = f"The price is {20 * 59} dollars"
+print(txt)
+
+
+
+
 
  
 
