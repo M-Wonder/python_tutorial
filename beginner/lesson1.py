@@ -178,6 +178,25 @@ txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
 
+#You can return a range of characters by using the slice syntax.
+slcice2 = "Hello, World!"
+print(slcice2[2:5])
+#by leaving out the start index, the range will start at the first character:
+slcice2 = "Hello, World!"
+print(slcice2[:5]); print(slcice2[2:]) #By leaving out the end index, the range will go to the end:
+
+#Use negative indexes to start the slice from the end of the string:
+slcice2 = "Hello, World!"
+print(slcice2[-5:-2])
+
+
+ 
+
+
+
+
+
+
 
 
 
