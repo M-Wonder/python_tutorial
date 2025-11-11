@@ -77,5 +77,112 @@ print(isinstance(done, bool))
 
 
 #numbers in python Numbers in Python can be of 3 types: int, float and complex.
+#specific data type
+str1=str("hello world")#string
+int1=int(20)#integer
+float1=float(20.5)#float
+complex1=complex(1j)#complex
+list1=list(("apple" "banana" "cherry"))#list
+tuple1=tuple(("banana" "apple" "cherry"))#tupple
+range1=range(6)#range
+dict1=dict(name3="john", age2=36)#
+frozenset1 = frozenset(("apple", "banana", "cherry")) 	#frozenset 	
+boolean1 = bool(5) 	#bool 	
+bytes1 = bytes(5) 	#bytes 	
+bytearray1 = bytearray(5) 	#bytearray 	
+memoryview1 = memoryview(bytes(5))#memoryview
+
+#Setting the Data Type
+x2complex=1j
+list2=["apple" "banan" "cherry"]
+tuple2=("apple" "banana" "cherry")
+dict2={"name":"john", "age":36 }
+set2={"apple", "banana", "cherry"}
+frozenset2=({"apple", "banana", "cherry"})
+bool2=True
+bytes2=b"apple"
+bbytearray2=bytearray(6)
+e = 1 ;print(type(e))   # int
+f = 2.8 ;f2 = 35e3; print(type(f)) # float. Float can also be scientific numbers with an "e" to indicate the power of 10.; 
+g = 1j; g2= 3+5j; print(type(g))   # complex. Complex numbers are written with a "j" as the imaginary part:
+
+#type conversion
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c)) 
+
+#random number using in built random module
+import random
+print(random.randrange(1, 10))
+
+#python casting
+cast1 = int(1)   # x will be 1
+float3= float("3")   # z will be 3.0
+string3 = str(3.0)  # z will be '3.0'
+print(cast1)
+print(float3)
+print(string3)
+
+#You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+print("He is called 'Johnny'")
+
+#You can assign a multiline string to a variable by using three quotes:
+multstrng = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(multstrng)
+
+#Strings are Arrays
+strays = "Hello, World!" #Get the character at position 1  first character has the position 0
+print(strays[1])
+
+#Since strings are arrays, we can loop through the characters in a string, with a for loop.
+for y in "banana":
+  print(y) 
+
+  #To get the length of a string, use the len() function.
+len1 = "Hello, World!"
+print(len(len1))
+
+#To check if a certain phrase or character is present in a string, we can use the keyword in.
+txt = "The best things in life are free!"
+print("free" in txt)
+#Use it in an if statement:
+txt = "The best things in life are free!"
+if "free" in txt:
+ print("Yes, 'free' is present.")
+
+#To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+
+
+
+
+
+
+
 
 
