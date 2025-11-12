@@ -221,6 +221,39 @@ print(txt5)
 txt = f"The price is {20 * 59} dollars"
 print(txt)
 
+#to insert characters that are illegal in a string, use an escape character.
+#An escape character is a backslash \ followed by the character you want to insert.
+escape1 = "We are the so-called \"Vikings\" from the north."
+
+#A backslash followed by three integers will result in a octal value:
+txt = "\110\145\154\154\157"
+print(txt) 
+
+#A backslash followed by an 'x' and a hex number represents a hex value:
+txt = "\x48\x65\x6c\x6c\x6f"
+print(txt) 
+
+#carriage return
+txt = "Hello\rWorld!"
+print(txt) 
+
+#new line\n
+txt = "Hello\nWorld!"
+print(txt) 
+
+##This example erases one character (backspace):
+txt = "Hello \bWorld!"
+print(txt) 
+
+#tab \t
+txt = "Hello\tWorld!"
+print(txt) 
+
+#String Methods
+#Python has a set of built-in methods that you can use on strings.
+#Note: All string methods return new values. They do not change the original string.
+
+
 
 
 
