@@ -253,6 +253,60 @@ print(txt)
 #Python has a set of built-in methods that you can use on strings.
 #Note: All string methods return new values. They do not change the original string.
 
+#Boolean values
+#Any non-empty or non-zero value is considered True.
+#Empty or zero values are considered False.
+print(10 > 9); print(10 == 9); print(10 < 9) 
+
+x = ""
+y = 15
+
+print(bool(x))
+print(bool(y))
+
+#Any list, tuple, set, and dictionary are True, except empty ones.
+#In fact, there are not many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. 
+#And of course the value False evaluates to False.
+print(bool(False)); print(bool(None))
+print(bool(0)); print(bool(""))
+print(bool(()))
+print(bool([])); print(bool({}))
+
+# if you have an object that is made from a class with a __len__ function that returns 0 or False: 
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+
+
+#When you run a condition in an if statement, Python returns True or False
+a = 200
+b = 199.9
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+#You can create functions that returns a Boolean Value:
+def myFunction() :
+  return True
+
+print(myFunction()) 
+
+#You can execute code based on the Boolean answer of a function:
+def myFunction() :
+  return False
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+
+
 
 
 
